@@ -17,7 +17,7 @@ public class SinhVienForm extends javax.swing.JFrame {
     /**
      * Creates new form SinhVienForm
      */
-    private ArrayList<SinhVien> sinhViens;
+    private ArrayList<SinhVien> sinhViens = new ArrayList<>();
     private int siSoDefault = 1;
     private int siSoCurrent = 0;
     private String tenLop;
@@ -167,7 +167,6 @@ public class SinhVienForm extends javax.swing.JFrame {
             } else {
                 siSoCurrent++;
             }
-            sinhViens = new ArrayList<>();
             sinhViens.add(new SinhVien(
                 jt_hoTen.getText(), 
                 jt_mssv.getText(), 
