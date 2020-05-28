@@ -179,16 +179,21 @@ public class SinhVienForm extends javax.swing.JFrame {
                 ViewLopForm viewLopForm = new ViewLopForm(lopHoc);
                 viewLopForm.setVisible(true);
             }
+            clearText();
         }
     }//GEN-LAST:event_jb_addActionPerformed
 
     private void bt_canlceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_canlceActionPerformed
         // TODO add your handling code here:
+        clearText();
+    }//GEN-LAST:event_bt_canlceActionPerformed
+
+    private void clearText() {
         jt_diemHp.setText("");
         jt_diemQt.setText("");
         jt_hoTen.setText("");
         jt_mssv.setText("");
-    }//GEN-LAST:event_bt_canlceActionPerformed
+    }
 
     private boolean validateText(JTextField text) {
         if (text.getText().equals("")) {
